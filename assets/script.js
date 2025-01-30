@@ -22,7 +22,7 @@ track.appendChild(firstClone);
 
 let index = 1;
 let translateX = -100; // Start at first real slide
-let maxTranslateX = -40* (slides.length + 1); // Prevents excessive scrolling
+let maxTranslateX = -15* (slides.length + 1); // Prevents excessive scrolling
 
 track.style.transform = `translateX(${translateX}vw)`;
 updateActiveSlide(index);
