@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice cube events - Event Bookings Simplified</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body class="">
-    <header class="header">
-        <div class="logo">LOGO</div>
+    <header class="header z-30">
+        <div class="logo">
+            <a href="/" >
+                <img src="" alt="brand logo" />
+            </a>
+        </div>
         <button class="hamburger" id="menu-btn">
             <div></div>
             <div></div>
@@ -23,13 +28,73 @@
         </ul>
     </header>
 
-<div class="carousel-container">
-    <div class="carousel-track">
-        <div class="slide"><img src="https://shaadhiweddings.com/wp-content/uploads/2024/02/Untitled-design-2024-02-01T153757.219.png" alt="Slide 1"></div>
-        <div class="slide"><img src="https://shaadhiweddings.com/wp-content/uploads/2024/02/Untitled-design-2024-02-01T153757.219.png" alt="Slide 2"></div>
-        <div class="slide"><img src="https://shaadhiweddings.com/wp-content/uploads/2024/02/Untitled-design-2024-02-01T153757.219.png" alt="Slide 3"></div>
+<section class="hero -mt-20">
+    <div class="carousel-container">
+    <div class="overlay z-10 absolute w-full h-full"></div>
+        <div class="carousel-track">
+            <div class="slide"><img src="https://shaadhiweddings.com/wp-content/uploads/2024/02/Untitled-design-2024-02-01T153757.219.png" alt="Slide 1"></div>
+            <div class="slide"><img src="https://shaadhiweddings.com/wp-content/uploads/2024/02/Untitled-design-2024-02-01T153757.219.png" alt="Slide 2"></div>
+            <div class="slide"><img src="https://shaadhiweddings.com/wp-content/uploads/2024/02/Untitled-design-2024-02-01T153757.219.png" alt="Slide 3"></div>
+        </div>
     </div>
-</div>
+</section>
+
+
+<section>
+    <div class="flex flex-col md:flex-row m-8">
+     <div class=" w-full md:w-1/2">
+         <img class="w-full h-auto" src="./images/beach-1854076_1280.jpg" alt="">
+     </div>
+     <div class="m-4 max-h-full md:w-1/2">
+         <p class="text-xl font-semibold">About Celebraze</p>
+         <p class="text-3xl font-bold">Intimate Gatherings to Grand Celebrations</p>
+         <p class="font-medium">Celebraze Events is a full-service event management company that specializes in weddings, corporate events, and social gatherings. We have over 10 years of experience in the event planning industry and have helped hundreds of clients create unforgettable events. We believe that every event is unique and deserves to be planned with care. We work with our clients to understand their vision for their event and then create a plan that meets their needs and budget. We are committed to providing our clients with the best possible event planning experience.</p>
+         <br>
+         <p class="font-medium">
+             <i class="fa-solid fa-check"></i> Personalized Event Experiences <br>
+             <i class="fa-solid fa-check"></i> Client-Centric Approach <br>
+             <i class="fa-solid fa-check"></i> Experienced and Professional Team
+         </p>
+     </div>
+    </div>
+    <p style="background-color: rgb(156, 205, 205);" class="p-9 fs-6 text-center italic text-leading-6">
+        We will work with you to understand your vision for your event and create a plan that meets your needs and budget. <br>
+        We will be responsive to your needs and make sure that your event runs smoothly. <br>
+        We will provide you with a detailed timeline and budget for your event. <br>
+        We will provide you with a certificate of insurance. <br>
+        We will work with you to obtain all necessary permits and licenses. <br>
+        We will provide you with a list of vendors that we have worked with in the past. <br>
+        We will provide you with a list of references. <br>
+    </p>
+</section>
+
+ <!-- How it works -->
+ <section>
+    <p class="font-extrabold text-2xl text-center m-5">How It Works?</p>
+    <p class="font-semibold text-xl text-center text-red-500 m-5">Watch It Now</p>
+    <div class="flex flex-wrap justify-center m-6 bg-light">
+        <div class="w-60 h-82 bg-white-300 m-6 rounded-lg shadow-lg content-center">
+            <img width="80px" class="ml-16" src="./images/search.webp" alt="">
+            <p class="text-center text-xl font-semibold m-5">Browse Venues</p>
+            <p class="text-center font-medium m-5">Check out the best suited Venues, compare photos, special offers and function packages.</p>
+        </div>
+        <div class="w-60 h-82 bg-white-300 m-6 rounded-lg shadow-lg content-center">
+            <img width="80px" class="ml-16" src="./images/rupee.webp" alt="">
+            <p class="text-center text-xl font-semibold m-5">Request Quotes</p>
+            <p class="text-center font-medium m-5">Get custom quotes of your short-listed Venues at the click of GET FREE QUOTES button.</p>
+        </div>
+        <div class="w-60 h-82 bg-white-300 m-6 rounded-lg shadow-lg content-center">
+            <img width="80px" class="ml-16" src="./images/calender.webp" alt="">
+            <p class="text-center text-xl font-semibold m-5">Book a Venue</p>
+            <p class="text-center font-medium m-5">Select and Book the perfect venue in no time at all. Time is money, save both.</p>
+        </div>
+        <div class="w-60 h-82 bg-white-300 m-6 rounded-lg shadow-lg content-center">
+            <img width="100px" class="ml-16" src="./images/events.webp" alt="">
+            <p class="text-center text-xl font-semibold m-5">Event Planning</p>
+            <p class="text-center font-medium m-5">Plan your event effortlessly with expert guidance. Save time, stay stress-free.</p>
+        </div>
+    </div>
+</section>
 
 <script src="./assets/script.js"></script>
 </body>
