@@ -74,7 +74,7 @@
 
     .nav-active {
         top: 60px;
-        opacity: 1;
+        opacity: 0.75;
         position: absolute;
     }
 
