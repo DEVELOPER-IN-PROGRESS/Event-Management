@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ice cube events - Event Bookings Simplified</title>
+    <title>Riverstone - Event Bookings Simplified</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 </head>
 <body class="">
-    <header class="header z-30">
-        <div class="logo">
-            <a href="/" >
-                <img src="" alt="brand logo" />
-            </a>
-        </div>
-        <button class="hamburger" id="menu-btn">
-            <div></div>
-            <div></div>
-            <div></div>
-        </button>
+<header class="header z-15">
+    <div class="logo">
+        <a href="/" >
+            <img src="./assets/logo.png" class="brandlogo" alt="Riverstone events logo" />
+        </a>
+    </div>
+    <button class="hamburger z-25"  id="menu-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+    <nav>
         <ul class="nav-links" id="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="./services.html" target="_blank">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./login.html">Login</a></li>
         </ul>
-    </header>
+    </nav>
+</header>
 
-<section class="hero -mt-20">
+<section class="hero -mt-40">
     <div class="carousel-container">
     <div class="overlay z-10 absolute w-full h-full"></div>
         <div class="carousel-track">
@@ -39,16 +43,15 @@
     </div>
 </section>
 
-
-<section>
+<section id="about">
     <div class="flex flex-col md:flex-row m-8">
      <div class=" w-full md:w-1/2">
-         <img class="w-full h-auto" src="./images/beach-1854076_1280.jpg" alt="">
+         <img class="w-full h-auto" src="./assets/beach.jpg" alt="beachc:\Users\johns\Downloads\logo black.png">
      </div>
      <div class="m-4 max-h-full md:w-1/2">
-         <p class="text-xl font-semibold">About Celebraze</p>
+         <p class="text-xl font-semibold">About Riverstone</p>
          <p class="text-3xl font-bold">Intimate Gatherings to Grand Celebrations</p>
-         <p class="font-medium">Celebraze Events is a full-service event management company that specializes in weddings, corporate events, and social gatherings. We have over 10 years of experience in the event planning industry and have helped hundreds of clients create unforgettable events. We believe that every event is unique and deserves to be planned with care. We work with our clients to understand their vision for their event and then create a plan that meets their needs and budget. We are committed to providing our clients with the best possible event planning experience.</p>
+         <p class="font-medium">Riverstone Events is a full-service event management company that specializes in weddings, corporate events, and social gatherings. We have over 10 years of experience in the event planning industry and have helped hundreds of clients create unforgettable events. We believe that every event is unique and deserves to be planned with care. We work with our clients to understand their vision for their event and then create a plan that meets their needs and budget. We are committed to providing our clients with the best possible event planning experience.</p>
          <br>
          <p class="font-medium">
              <i class="fa-solid fa-check"></i> Personalized Event Experiences <br>
@@ -69,33 +72,164 @@
 </section>
 
  <!-- How it works -->
- <section>
+ <section >
     <p class="font-extrabold text-2xl text-center m-5">How It Works?</p>
     <p class="font-semibold text-xl text-center text-red-500 m-5">Watch It Now</p>
     <div class="flex flex-wrap justify-center m-6 bg-light">
         <div class="w-60 h-82 bg-white-300 m-6 rounded-lg shadow-lg content-center">
-            <img width="80px" class="ml-16" src="./images/search.webp" alt="">
+            <img width="80px" class="ml-16" src="./assets/search.webp" alt="">
             <p class="text-center text-xl font-semibold m-5">Browse Venues</p>
             <p class="text-center font-medium m-5">Check out the best suited Venues, compare photos, special offers and function packages.</p>
         </div>
         <div class="w-60 h-82 bg-white-300 m-6 rounded-lg shadow-lg content-center">
-            <img width="80px" class="ml-16" src="./images/rupee.webp" alt="">
+            <img width="80px" class="ml-16" src="./assets/rupee.webp" alt="">
             <p class="text-center text-xl font-semibold m-5">Request Quotes</p>
             <p class="text-center font-medium m-5">Get custom quotes of your short-listed Venues at the click of GET FREE QUOTES button.</p>
         </div>
         <div class="w-60 h-82 bg-white-300 m-6 rounded-lg shadow-lg content-center">
-            <img width="80px" class="ml-16" src="./images/calender.webp" alt="">
+            <img width="80px" class="ml-16" src="./assets/calender.webp" alt="">
             <p class="text-center text-xl font-semibold m-5">Book a Venue</p>
             <p class="text-center font-medium m-5">Select and Book the perfect venue in no time at all. Time is money, save both.</p>
         </div>
         <div class="w-60 h-82 bg-white-300 m-6 rounded-lg shadow-lg content-center">
-            <img width="100px" class="ml-16" src="./images/events.webp" alt="">
+            <img width="100px" class="ml-16" src="./assets/events.webp" alt="">
             <p class="text-center text-xl font-semibold m-5">Event Planning</p>
             <p class="text-center font-medium m-5">Plan your event effortlessly with expert guidance. Save time, stay stress-free.</p>
         </div>
     </div>
 </section>
 
+<footer class="text-gray-400 bg-gray-900 body-font pt-5">
+    <div class="container mx-auto py-[16px]">
+        <span class="flex sm:ml-auto sm:mt-0 mt-2 justify-center">
+            <a href="" class="ml-3 text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50" class="w-5 h-5 fill-white">
+                    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path>
+                </svg>
+            </a>
+            <a href="" class="ml-3 text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30" class="w-5 h-5 fill-white">
+                    <path d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"></path>
+                </svg>
+            </a>
+            <a href="" class="ml-3 text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30" class="w-5 h-5 fill-white">
+                    <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+                </svg>
+            </a>
+            <a href="" class="ml-3 text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50" class="w-5 h-5 fill-white">
+                    <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"></path>
+                    </svg>
+            </a>
+            <a href="" class="ml-3 text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"  class="w-5 h-5 fill-white">
+                    <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                </svg>
+            </a>
+        </span>
+
+        <div class="mx-auto py-10 lg:pt-10 lg:pb-0 w-3/6 text-center logo">
+            <a href="/" class="">
+                <img src="./assets/logo.png" classs="brandlogo" alt="logo">
+            </a>
+        </div>
+    </div>
+
+    <div class="container px-5 py-10 md:py-24 lg:py-12 mx-auto flex md:items-center lg:items-start md:flex-col lg:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center text-center lg:text-left">
+            <p class="title-font font-medium  text-gray-900">
+                <img src="" alt="">
+                <span class="text-sm font-semibold text-white">Event Designers</span>
+            </p>
+            <p class="mt-2 text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, totam a nemo quod minus sapiente odit, repudiandae sint accusantium, porro velit rem! Quaerat ullam eum dolor doloribus quo, sapiente atque.</p>
+
+        </div>
+        <div class="flex-grow flex flex-wrap md:pt-20 lg:pt-0 md:mt-0 mt-10 text-center lg:text-left">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">QUICK LINKS</h2>
+                <nav class="list-none mb-10">
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Home</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">About</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Venue</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Gallery</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Contact</a>
+                    </li>
+                </nav>
+
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SERVICES</h2>
+                <nav class="list-none mb-10">
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Corperative Events</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Wedding Planner</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Music & Entertainment</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Private Parties</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Destination Wedding</a>
+                    </li>
+                </nav>
+
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">OTHER LINKS</h2>
+                <nav class="list-none mb-10">
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Blog</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Testimonials</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Privacy Policy</a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Cancellation & Refund </a>
+                    </li>
+                    <li class="mb-2">
+                        <a class="text-gray-400 hover:text-white" href="">Terms of Services</a>
+                    </li>
+                </nav>
+
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SUBSCRIBE</h2>
+                <div class="">
+                    <div class="relative mx-auto">
+                        <input type="text" class="mx-auto sm:w-[30vw] md:w-40 w-full bg-gray-800 rounded border bg-opacity-40 border-gray-700 focus:bg-transparent focus:ring-2 focus:ring-indigo-900 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="Enter your email" />
+                    </div>
+
+                </div>
+                <p class="text-gray-500 text-sm md:text-left  text-center">we Make your memories beautiful <br>Accepted worldwide</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-800 bg-opacity-75">
+        <div class="container text-center mx-auto py-4 px-5 flex flex-col md:flex-row  md:justify-between">
+            <p class="text-gray-400 text-sm text-center md:text-left">© 2025 riverstone. All rights Reserved</p>
+            <p class="text-gray-400 text-sm text-center md:text-right">Designed by Zoro Studios</p>
+        </div>
+    </div>
+
+</footer>
 <script src="./assets/script.js"></script>
 </body>
 </html>
