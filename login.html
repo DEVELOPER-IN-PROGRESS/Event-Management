@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800">
+
+  <div class="flex items-center justify-center mt-[10vh]">
+      <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-6">
+          <h2 class="text-2xl font-bold text-gray-700 text-center">Login</h2>
+          <form class="mt-6">
+            <!-- User name -->
+            <div class="mb-4">
+              <label for="User name" class="block text-sm font-medium text-gray-600">User name or Email</label>
+              <input type="name" id="name" placeholder="Enter your name or Email"
+                class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring focus:ring-blue-300 focus:border-blue-500">
+            </div>
+
+            <!-- Password Input -->
+            <div class="mb-4">
+              <label for="password" class="block text-sm font-medium text-gray-600">Password</label>
+              <input type="password" id="password" placeholder="Enter your password"
+                class="mt-2 block w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring focus:ring-blue-300 focus:border-blue-500">
+            </div>
+            <!-- Remember Me -->
+            <div class="flex items-center justify-between mb-4">
+              <label class="inline-flex items-center">
+                <input type="checkbox" class="form-checkbox text-blue-500">
+                <span class="ml-2 text-sm text-gray-600">Remember me</span>
+              </label>
+              <a href="#" class="text-sm text-blue-500 hover:underline">Forgot password?</a>
+            </div>
+            <!-- Submit Button -->
+            <a href="#" class="">
+                  <button type="submit"
+                  class="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
+                  Login
+                </button>
+            </a>
+
+          </form>
+          <!-- Divider -->
+          <div class="mt-6 text-center">
+            <p class="text-sm text-gray-600">Don't have an account?
+              <a href="./registration.html" class="text-blue-500 hover:underline">
+                  Signup Now
+              </a>
+            </p>
+                <!-- <button class="w-full bg-blue-500 text-white mt-4 py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300"> </button> -->
+          </div>
+        </div>
+  </div>
+
+</body>
+</html>
